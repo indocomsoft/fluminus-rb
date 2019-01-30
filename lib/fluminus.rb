@@ -1,4 +1,6 @@
-require "fluminus/version"
+require 'fluminus/api'
+require 'fluminus/cli'
+require 'fluminus/version'
 
 module Fluminus
   class Error < StandardError; end

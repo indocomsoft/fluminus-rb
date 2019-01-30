@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'fluminus'
+
+cli = Fluminus::CLI.new
