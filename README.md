@@ -1,10 +1,18 @@
-# Fluminus
+# Fluminus [WIP]
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fluminus`. To experiment with that code, run `bin/console` for an interactive prompt.
+Warning: this is still a work-in-progress.
 
-TODO: Delete this and the text above, and describe your gem
+<sup><sub>F LumiNUS! IVLE ftw! Why fix what ain't broken?!</sub></sup>
+
+Since IVLE will be deprecated next academic year (AY2019/2020), while LumiNUS has consistently pushed back its schedule to release an API, I have decided to reverse-engineer the API used by the Angular front-end of LumiNUS. Currently, my goal is to be able to automatically download files a la [ivle-sync](https://github.com/goweiwen/ivle-sync)
+
+I try to keep to best coding practices and use as little dependencies as possible. Do let me know if you have any suggestions!
+
+PR's are welcome.
 
 ## Installation
+
+Ignore all the parts below.
 
 Add this line to your application's Gemfile:
 
@@ -22,7 +30,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+
 
 ## Development
 
@@ -32,7 +40,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/fluminus. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/indocomsoft/fluminus. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -40,4 +48,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Fluminus project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/fluminus/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Fluminus project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/indocomsoft/fluminus/blob/master/CODE_OF_CONDUCT.md).
