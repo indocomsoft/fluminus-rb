@@ -1,4 +1,5 @@
 require 'fluminus/api'
+require 'fluminus/authentication'
 require 'fluminus/cli'
 require 'fluminus/version'
 
