@@ -1,12 +1,16 @@
+# frozen_string_literal: true
+
 module Fluminus
+  # Authentication provides an abstraction over the OpenID Connect flow
+  # authentication process as used by LumiNUS
   class Authentication
-    AUTH_BASE_URI = 'https://luminus.nus.edu.sg'.freeze
-    DISCOVERY_PATH = '/v2/auth/.well-known/openid-configuration'.freeze
-    CLIENT_ID = 'verso'.freeze
+    AUTH_BASE_URI = 'https://luminus.nus.edu.sg'
+    DISCOVERY_PATH = '/v2/auth/.well-known/openid-configuration'
+    CLIENT_ID = 'verso'
     SCOPE = 'profile email role openid lms.read calendar.read lms.delete ' \
-            'lms.write calendar.write gradebook.write offline_access'.freeze
-    RESPONSE_TYPE = 'id_token token code'.freeze
-    REDIRECT_URI = 'https://luminus.nus.edu.sg/auth/callback'.freeze
+            'lms.write calendar.write gradebook.write offline_access'
+    RESPONSE_TYPE = 'id_token token code'
+    REDIRECT_URI = 'https://luminus.nus.edu.sg/auth/callback'
 
     # Prevent class instantiation
     private_class_method :new

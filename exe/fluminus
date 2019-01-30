@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 require 'fluminus'
 
 cli = Fluminus::CLI.new
+cli.run

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'cgi'
 require 'excon'
 require 'json'
@@ -5,9 +7,10 @@ require 'oga'
 require 'securerandom'
 
 module Fluminus
+  # API provides an abstraction over the LumiNUS API
   class API
-    API_BASE_URI = 'https://luminus.azure-api.net'.freeze
-    OCM_APIM_SUBSCRIPTION_KEY = '6963c200ca9440de8fa1eede730d8f7e'.freeze
+    API_BASE_URI = 'https://luminus.azure-api.net'
+    OCM_APIM_SUBSCRIPTION_KEY = '6963c200ca9440de8fa1eede730d8f7e'
 
     def authenticate(username, password)
       if @jwt.nil?
@@ -32,18 +35,11 @@ module Fluminus
 
     def modules(opts = {})
       if opts[:force_fetch] || @modules.nil?
-        @modules = api('/module/?populate=termdetail')['data']
+        api_data = api('/module/?populate=termdetail')['data']
+        @modules = api_data.map { |a| Module.from_api(a) }
       else
         @modules
       end
-    end
-
-    def modules_taking(opts = {})
-      modules(opts).filter { |m| !m['access']['access_Create'] }
-    end
-
-    def modules_teaching(opts = {})
-      modules(opts).filter { |m| m['access']['access_Create'] }
     end
 
     private
